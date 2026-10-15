@@ -52,15 +52,16 @@ diretiva:      lutar pelos usuários
 
 <div align="center">
 
-<sub><code>LINGUAGENS</code></sub>
-<br/>
+<sub><code>LINGUAGENS</code></sub><br/>
 <img src="https://img.shields.io/badge/Python-0A0E14?style=for-the-badge&logo=python&logoColor=00F0FF" alt="Python" />
 <img src="https://img.shields.io/badge/R-0A0E14?style=for-the-badge&logo=r&logoColor=00F0FF" alt="R" />
 <img src="https://img.shields.io/badge/Shell%20Script-0A0E14?style=for-the-badge&logo=gnubash&logoColor=00F0FF" alt="Shell Script" />
 <img src="https://img.shields.io/badge/PHP-0A0E14?style=for-the-badge&logo=php&logoColor=00F0FF" alt="PHP" />
+<img src="https://img.shields.io/badge/HTML%2FCSS-0A0E14?style=for-the-badge&logo=html5&logoColor=00F0FF" alt="HTML/CSS" />
+
 <br/><br/>
-<sub><code>SISTEMAS</code></sub>
-<br/>
+
+<sub><code>SISTEMAS</code></sub><br/>
 <img src="https://img.shields.io/badge/Moodle-0A0E14?style=for-the-badge&logo=moodle&logoColor=FF7A1A" alt="Moodle" />
 <img src="https://img.shields.io/badge/BigBlueButton-0A0E14?style=for-the-badge&logo=bigbluebutton&logoColor=FF7A1A" alt="BigBlueButton" />
 <img src="https://img.shields.io/badge/Linux-0A0E14?style=for-the-badge&logo=linux&logoColor=FF7A1A" alt="Linux" />
