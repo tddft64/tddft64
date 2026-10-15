@@ -33,6 +33,7 @@ diretiva:      lutar pelos usuários
 ```diff
 + A inteligência artificial não deve te dar uma nova habilidade... Ela tem que potencializar
 + as que você já tem.
+
 + Já simulei elétrons com Monte Carlo quântico. Hoje simulo calendário acadêmico.
 + O segundo tem mais variância.
 
