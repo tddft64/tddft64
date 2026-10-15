@@ -52,16 +52,21 @@ diretiva:      lutar pelos usuários
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Python-0A0E14?style=for-the-badge&logo=python&logoColor=00F0FF" alt="Python" />
-<img src="https://img.shields.io/badge/PHP-0A0E14?style=for-the-badge&logo=php&logoColor=00F0FF" alt="PHP" />
-<img src="https://img.shields.io/badge/JavaScript-0A0E14?style=for-the-badge&logo=javascript&logoColor=00F0FF" alt="JavaScript" />
-<img src="https://img.shields.io/badge/R-0A0E14?style=for-the-badge&logo=r&logoColor=00F0FF" alt="R" />
-<img src="https://img.shields.io/badge/Moodle-0A0E14?style=for-the-badge&logo=moodle&logoColor=FF7A1A" alt="Moodle" />
+<sub><code>LINGUAGENS</code></sub>
 <br/>
-<img src="https://img.shields.io/badge/LaTeX-0A0E14?style=for-the-badge&logo=latex&logoColor=FF7A1A" alt="LaTeX" />
+<img src="https://img.shields.io/badge/Python-0A0E14?style=for-the-badge&logo=python&logoColor=00F0FF" alt="Python" />
+<img src="https://img.shields.io/badge/R-0A0E14?style=for-the-badge&logo=r&logoColor=00F0FF" alt="R" />
+<img src="https://img.shields.io/badge/Shell%20Script-0A0E14?style=for-the-badge&logo=gnubash&logoColor=00F0FF" alt="Shell Script" />
+<img src="https://img.shields.io/badge/PHP-0A0E14?style=for-the-badge&logo=php&logoColor=00F0FF" alt="PHP" />
+<br/><br/>
+<sub><code>SISTEMAS</code></sub>
+<br/>
+<img src="https://img.shields.io/badge/Moodle-0A0E14?style=for-the-badge&logo=moodle&logoColor=FF7A1A" alt="Moodle" />
+<img src="https://img.shields.io/badge/BigBlueButton-0A0E14?style=for-the-badge&logo=bigbluebutton&logoColor=FF7A1A" alt="BigBlueButton" />
 <img src="https://img.shields.io/badge/Linux-0A0E14?style=for-the-badge&logo=linux&logoColor=FF7A1A" alt="Linux" />
+<img src="https://img.shields.io/badge/LaTeX-0A0E14?style=for-the-badge&logo=latex&logoColor=FF7A1A" alt="LaTeX" />
+<img src="https://img.shields.io/badge/Open%20Source-0A0E14?style=for-the-badge&logo=opensourceinitiative&logoColor=FF7A1A" alt="Open Source" />
 <img src="https://img.shields.io/badge/Git-0A0E14?style=for-the-badge&logo=git&logoColor=FF7A1A" alt="Git" />
-<img src="https://img.shields.io/badge/Claude-0A0E14?style=for-the-badge&logo=claude&logoColor=FF7A1A" alt="Claude" />
 
 </div>
 
