@@ -21,23 +21,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Gerar SVG da moto de luz
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/moto-de-luz.svg?color_snake=#FF7A1A&color_dots=#0A0E14,#06343B,#0A6670,#00A8B5,#00F0FF
-
       - name: Checkout (script da telemetria)
         uses: actions/checkout@v7
         with:
           sparse-checkout: .github/scripts
           path: repo
 
+      # roda antes do snk: o container do snk cria arquivos como root dentro de dist/
       - name: Gerar card da telemetria
         run: python3 repo/.github/scripts/telemetria.py "${{ github.repository_owner }}" dist/telemetria.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Gerar SVG da moto de luz
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/moto-de-luz.svg?color_snake=#FF7A1A&color_dots=#0A0E14,#06343B,#0A6670,#00A8B5,#00F0FF
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v5
