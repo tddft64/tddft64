@@ -24,7 +24,7 @@ setor_atual:   educação a distância      # 12 ciclos rodando na Grade
 ensina:        [Inteligência Artificial e qualquer coisa com números]
 turno_noturno: agentes de IA codando enquanto eu durmo
 pilota:        Omega Suprema 1993, a álcool   # placa preta, respeite
-sonha_com:     um monomotor só meu
+sonha_com:     comprar uma fazenda e nunca mais pegar num computador :)
 diretiva:      lutar pelos usuários
 ```
 
@@ -32,7 +32,7 @@ diretiva:      lutar pelos usuários
 
 ```diff
 + A inteligência artificial não deve te dar uma nova habilidade... Ela tem que potencializar
-  as que você já tem.
++ as que você já tem.
 + Já simulei elétrons com Monte Carlo quântico. Hoje simulo calendário acadêmico.
 + O segundo tem mais variância.
 
