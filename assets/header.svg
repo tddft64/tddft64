@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="t d">
+  <title id="t">THIAGO FERNANDES</title>
+  <desc id="d">Banner neon com grade em perspectiva e rastros de luz: físico computacional, dev e professor.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020309"/>
+      <stop offset="0.55" stop-color="#04111c"/>
+      <stop offset="1" stop-color="#08283a"/>
+    </linearGradient>
+    <linearGradient id="floorfade" x1="0" y1="212" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.05"/>
+      <stop offset="0.25" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="floormask"><rect x="0" y="212" width="1200" height="148" fill="url(#floorfade)"/></mask>
+    <clipPath id="floorclip"><rect x="0" y="212" width="1200" height="148"/></clipPath>
+    <radialGradient id="hglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="0.4" stop-color="#00a8b5" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#00a8b5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-10%" y="-100%" width="120%" height="300%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity="0.18"/>
+    </pattern>
+  </defs>
+  <style>
+    .floor { transform-box: view-box; transform-origin: 600px 212px; animation: run 1.1s linear infinite; }
+    @keyframes run { from { transform: scale(1,1); } to { transform: scale(1,1.32); } }
+    .name { animation: flicker 7s infinite; }
+    @keyframes flicker {
+      0%, 41%, 43.5%, 45%, 100% { opacity: 1; }
+      42% { opacity: .35; } 44% { opacity: .6; }
+    }
+    .trail { fill: none; stroke-linecap: square; stroke-linejoin: miter; }
+    .t1 { stroke-dasharray: 260 3000; animation: t1 4.2s cubic-bezier(.45,0,.55,1) infinite; }
+    .h1 { stroke-dasharray: 6 3000; animation: h1 4.2s cubic-bezier(.45,0,.55,1) infinite; }
+    .t2 { stroke-dasharray: 260 3000; animation: t1 5.1s cubic-bezier(.45,0,.55,1) 1.3s infinite; stroke-dashoffset: 260; }
+    .h2 { stroke-dasharray: 6 3000; animation: h1 5.1s cubic-bezier(.45,0,.55,1) 1.3s infinite; stroke-dashoffset: 6; }
+    @keyframes t1 { from { stroke-dashoffset: 260; } to { stroke-dashoffset: -1000; } }
+    @keyframes h1 { from { stroke-dashoffset: 6; } to { stroke-dashoffset: -1254; } }
+    .blink { animation: blink 1.2s steps(2, start) infinite; }
+    @keyframes blink { to { visibility: hidden; } }
+    .pulse { animation: pulse 3.5s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
+    .hud { font-family: 'Fira Code', 'JetBrains Mono', Consolas, Menlo, 'DejaVu Sans Mono', monospace; font-size: 12px; letter-spacing: 2px; fill: #5fd9e6; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <rect width="1200" height="360" fill="url(#sky)"/>
+
+  <!-- brilho do horizonte -->
+  <ellipse class="pulse" cx="600" cy="212" rx="640" ry="95" fill="url(#hglow)"/>
+
+  <!-- cordilheira wireframe -->
+  <polyline points="-20,184.6 8,184.8 36,191.3 80,192.7 124,194.9 168,194.6 196,193.2 224,196.5 268,196.4 312,200.7 340,197.6 384,197.2 428,201.2 456,200.1 484,209.8 512,210.3 540,210.2 584,210.6 628,210.7 672,210.1 700,210.1 744,201.5 788,204.0 816,200.3 860,199.2 896,197.5 932,197.0 960,191.4 1004,189.3 1032,190.2 1076,189.1 1112,183.9 1148,183.6 1176,190.1 1212,187.8" fill="#02060c" fill-opacity="0.55" stroke="#00c8d6" stroke-opacity="0.35" stroke-width="1"/>
+
+  <!-- piso em grade -->
+  <g clip-path="url(#floorclip)">
+    <rect x="0" y="212" width="1200" height="148" fill="#020a12"/>
+    <g mask="url(#floormask)" stroke="#00e5f5" stroke-width="1.1" filter="url(#soft)">
+      <g opacity="0.55"><line x1="600" y1="212" x2="-1064" y2="400"/><line x1="600" y1="212" x2="-1000" y2="400"/><line x1="600" y1="212" x2="-936" y2="400"/><line x1="600" y1="212" x2="-872" y2="400"/><line x1="600" y1="212" x2="-808" y2="400"/><line x1="600" y1="212" x2="-744" y2="400"/><line x1="600" y1="212" x2="-680" y2="400"/><line x1="600" y1="212" x2="-616" y2="400"/><line x1="600" y1="212" x2="-552" y2="400"/><line x1="600" y1="212" x2="-488" y2="400"/><line x1="600" y1="212" x2="-424" y2="400"/><line x1="600" y1="212" x2="-360" y2="400"/><line x1="600" y1="212" x2="-296" y2="400"/><line x1="600" y1="212" x2="-232" y2="400"/><line x1="600" y1="212" x2="-168" y2="400"/><line x1="600" y1="212" x2="-104" y2="400"/><line x1="600" y1="212" x2="-40" y2="400"/><line x1="600" y1="212" x2="24" y2="400"/><line x1="600" y1="212" x2="88" y2="400"/><line x1="600" y1="212" x2="152" y2="400"/><line x1="600" y1="212" x2="216" y2="400"/><line x1="600" y1="212" x2="280" y2="400"/><line x1="600" y1="212" x2="344" y2="400"/><line x1="600" y1="212" x2="408" y2="400"/><line x1="600" y1="212" x2="472" y2="400"/><line x1="600" y1="212" x2="536" y2="400"/><line x1="600" y1="212" x2="600" y2="400"/><line x1="600" y1="212" x2="664" y2="400"/><line x1="600" y1="212" x2="728" y2="400"/><line x1="600" y1="212" x2="792" y2="400"/><line x1="600" y1="212" x2="856" y2="400"/><line x1="600" y1="212" x2="920" y2="400"/><line x1="600" y1="212" x2="984" y2="400"/><line x1="600" y1="212" x2="1048" y2="400"/><line x1="600" y1="212" x2="1112" y2="400"/><line x1="600" y1="212" x2="1176" y2="400"/><line x1="600" y1="212" x2="1240" y2="400"/><line x1="600" y1="212" x2="1304" y2="400"/><line x1="600" y1="212" x2="1368" y2="400"/><line x1="600" y1="212" x2="1432" y2="400"/><line x1="600" y1="212" x2="1496" y2="400"/><line x1="600" y1="212" x2="1560" y2="400"/><line x1="600" y1="212" x2="1624" y2="400"/><line x1="600" y1="212" x2="1688" y2="400"/><line x1="600" y1="212" x2="1752" y2="400"/><line x1="600" y1="212" x2="1816" y2="400"/><line x1="600" y1="212" x2="1880" y2="400"/><line x1="600" y1="212" x2="1944" y2="400"/><line x1="600" y1="212" x2="2008" y2="400"/><line x1="600" y1="212" x2="2072" y2="400"/><line x1="600" y1="212" x2="2136" y2="400"/><line x1="600" y1="212" x2="2200" y2="400"/><line x1="600" y1="212" x2="2264" y2="400"/></g>
+      <g class="floor" opacity="0.75"><line x1="-50" y1="212.90" x2="1250" y2="212.90"/><line x1="-50" y1="213.19" x2="1250" y2="213.19"/><line x1="-50" y1="213.57" x2="1250" y2="213.57"/><line x1="-50" y1="214.07" x2="1250" y2="214.07"/><line x1="-50" y1="214.73" x2="1250" y2="214.73"/><line x1="-50" y1="215.61" x2="1250" y2="215.61"/><line x1="-50" y1="216.76" x2="1250" y2="216.76"/><line x1="-50" y1="218.28" x2="1250" y2="218.28"/><line x1="-50" y1="220.30" x2="1250" y2="220.30"/><line x1="-50" y1="222.95" x2="1250" y2="222.95"/><line x1="-50" y1="226.45" x2="1250" y2="226.45"/><line x1="-50" y1="231.08" x2="1250" y2="231.08"/><line x1="-50" y1="237.18" x2="1250" y2="237.18"/><line x1="-50" y1="245.24" x2="1250" y2="245.24"/><line x1="-50" y1="255.88" x2="1250" y2="255.88"/><line x1="-50" y1="269.92" x2="1250" y2="269.92"/><line x1="-50" y1="288.46" x2="1250" y2="288.46"/><line x1="-50" y1="312.93" x2="1250" y2="312.93"/><line x1="-50" y1="345.22" x2="1250" y2="345.22"/><line x1="-50" y1="387.85" x2="1250" y2="387.85"/></g>
+    </g>
+  </g>
+
+  <!-- linha do horizonte -->
+  <line x1="0" y1="212" x2="1200" y2="212" stroke="#7ff8ff" stroke-width="1.6" filter="url(#glow)"/>
+
+  <!-- rastros de luz -->
+  <g filter="url(#glow)">
+    <path class="trail t1" pathLength="1000" stroke="#00f0ff" stroke-width="3" d="M -20 300 H 330 V 262 H 700 V 318 H 1220"/>
+    <path class="trail h1" pathLength="1000" stroke="#ffffff" stroke-width="5" d="M -20 300 H 330 V 262 H 700 V 318 H 1220"/>
+    <path class="trail t2" pathLength="1000" stroke="#ff7a1a" stroke-width="3" d="M 1220 280 H 900 V 336 H 520 V 290 H -20"/>
+    <path class="trail h2" pathLength="1000" stroke="#fff1e0" stroke-width="5" d="M 1220 280 H 900 V 336 H 520 V 290 H -20"/>
+  </g>
+
+  <!-- nome -->
+  <g class="name" text-anchor="middle" font-family="'Orbitron', 'Eurostile', 'Bank Gothic', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700">
+    <text x="600" y="118" font-size="62" letter-spacing="12" fill="none" stroke="#00f0ff" stroke-width="2.2" filter="url(#glow)">THIAGO FERNANDES</text>
+    <text x="600" y="118" font-size="62" letter-spacing="12" fill="#00f0ff" fill-opacity="0.07" stroke="#e8feff" stroke-width="0.8">THIAGO FERNANDES</text>
+  </g>
+  <text x="600" y="160" text-anchor="middle" class="hud" style="font-size:15px;letter-spacing:6px;fill:#bff8ff" filter="url(#soft)">FÍSICO COMPUTACIONAL  //  DEV  //  PROFESSOR</text>
+
+  <!-- HUD -->
+  <g stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M 18 40 V 18 H 40"/><path d="M 1160 18 H 1182 V 40"/>
+    <path d="M 18 320 V 342 H 40"/><path d="M 1160 342 H 1182 V 320"/>
+  </g>
+  <rect class="blink" x="34" y="28" width="8" height="12" fill="#00f0ff" filter="url(#soft)"/>
+  <text x="50" y="38" class="hud">PROGRAMA: THIAGO.EXE</text>
+  <text x="1148" y="38" class="hud" text-anchor="end">SETOR 07 // GRADE ONLINE</text>
+  <circle class="blink" cx="1160" cy="34" r="4" fill="#ff7a1a" filter="url(#soft)"/>
+
+  <rect width="1200" height="360" fill="url(#scan)" pointer-events="none"/>
+</svg>
