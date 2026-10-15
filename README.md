@@ -68,7 +68,7 @@ diretiva:      lutar pelos usuários
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/tddft64/tddft64/output/telemetria.svg" alt="Telemetria: contribuições, sequências e rastro semanal, incluindo repositórios privados" />
+<img width="100%" src="https://raw.githubusercontent.com/tddft64/tddft64/output/telemetria.svg?v=2" alt="Telemetria: contribuições, sequências e rastro semanal, incluindo repositórios privados" />
 
 </div>
 
@@ -76,7 +76,7 @@ diretiva:      lutar pelos usuários
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/tddft64/tddft64/output/moto-de-luz.svg" alt="Moto de luz percorrendo o gráfico de contribuições" />
+<img width="100%" src="https://raw.githubusercontent.com/tddft64/tddft64/output/moto-de-luz.svg?v=2" alt="Moto de luz percorrendo o gráfico de contribuições" />
 
 </div>
 
