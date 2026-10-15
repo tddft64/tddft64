@@ -68,10 +68,7 @@ diretiva:      lutar pelos usuários
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=tddft64&show_icons=true&locale=pt-br&bg_color=0A0E14&title_color=00F0FF&icon_color=FF7A1A&text_color=BFF8FF&ring_color=00F0FF&border_color=0E3A44" alt="Estatísticas do GitHub" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tddft64&layout=compact&langs_count=6&locale=pt-br&bg_color=0A0E14&title_color=00F0FF&text_color=BFF8FF&border_color=0E3A44" alt="Linguagens mais usadas" />
-
-<img src="https://streak-stats.demolab.com?user=tddft64&locale=pt_BR&background=0A0E14&border=0E3A44&stroke=0E3A44&ring=00F0FF&fire=FF7A1A&currStreakNum=FFFFFF&sideNums=00F0FF&currStreakLabel=00F0FF&sideLabels=BFF8FF&dates=5E8A94" alt="Sequência de contribuições" />
+<img width="100%" src="https://raw.githubusercontent.com/tddft64/tddft64/output/telemetria.svg" alt="Telemetria: contribuições, sequências e rastro semanal, incluindo repositórios privados" />
 
 </div>
 

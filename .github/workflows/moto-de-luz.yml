@@ -1,5 +1,5 @@
-# Gera a animação da moto de luz percorrendo o gráfico de contribuições
-# e publica o SVG na branch "output", de onde o README o carrega.
+# Gera a moto de luz percorrendo o gráfico de contribuições e o card de telemetria,
+# e publica os SVGs na branch "output", de onde o README os carrega.
 name: moto-de-luz
 
 on:
@@ -27,6 +27,17 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/moto-de-luz.svg?color_snake=#FF7A1A&color_dots=#0A0E14,#06343B,#0A6670,#00A8B5,#00F0FF
+
+      - name: Checkout (script da telemetria)
+        uses: actions/checkout@v7
+        with:
+          sparse-checkout: .github/scripts
+          path: repo
+
+      - name: Gerar card da telemetria
+        run: python3 repo/.github/scripts/telemetria.py "${{ github.repository_owner }}" dist/telemetria.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v5
