@@ -73,8 +73,6 @@ diretiva:      lutar pelos usuários
 
 <img src="https://streak-stats.demolab.com?user=SEU_USUARIO&locale=pt_BR&background=0A0E14&border=0E3A44&stroke=0E3A44&ring=00F0FF&fire=FF7A1A&currStreakNum=FFFFFF&sideNums=00F0FF&currStreakLabel=00F0FF&sideLabels=BFF8FF&dates=5E8A94" alt="Sequência de contribuições" />
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=SEU_USUARIO&bg_color=0A0E14&color=BFF8FF&line=00F0FF&point=FF7A1A&area=true&area_color=00F0FF&title_color=00F0FF&hide_border=true&custom_title=RASTRO%20DE%20CONTRIBUI%C3%87%C3%95ES" alt="Gráfico de atividade" />
-
 </div>
 
 ### ▸ MOTO DE LUZ × CONTRIBUIÇÕES
