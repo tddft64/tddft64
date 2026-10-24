@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-labelledby="tt dd">
+  <title id="tt">Telemetria da Grade</title>
+  <desc id="dd">928 contribuições nos últimos 12 meses, sequência atual de 0 dias, maior sequência de 14 dias, 935 contribuições desde 2022.</desc>
+  <defs>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .lbl { font: 600 12px 'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace; letter-spacing: 2px; fill: #5fd9e6; }
+    .num { font: 700 46px 'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace; }
+    .sub { font: 13px 'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace; fill: #8fb9c2; }
+    .hud { font: 12px 'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace; letter-spacing: 2px; fill: #5fd9e6; }
+    .det { font: 12px 'Fira Code','JetBrains Mono',Consolas,Menlo,'DejaVu Sans Mono',monospace; fill: #8fb9c2; }
+    .trail { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 2.4s ease-out .3s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .55; } }
+    @media (prefers-reduced-motion: reduce) { .trail { animation: none; stroke-dashoffset: 0; } .pulse { animation: none; } }
+  </style>
+
+  <rect width="1200" height="330" fill="#05070d"/>
+  <rect x="0.5" y="0.5" width="1199" height="329" fill="none" stroke="#0e3a44"/>
+  <g stroke="#00f0ff" stroke-width="2" fill="none">
+    <path d="M10 30 V10 H30"/><path d="M1170 10 H1190 V30"/>
+    <path d="M10 300 V320 H30"/><path d="M1170 320 H1190 V300"/>
+  </g>
+
+  <text x="30" y="44" class="hud" style="fill:#bff8ff;font-size:14px;letter-spacing:4px">TELEMETRIA DA GRADE</text>
+  <text x="1170" y="44" class="hud" text-anchor="end">SINAL ATUALIZADO 24/10/2026</text>
+  
+    <g transform="translate(30,70)">
+      <rect width="270" height="118" rx="2" fill="#071019" stroke="#0e3a44"/>
+      <path d="M0 14 V0 H14 M256 0 H270 V14" stroke="#00f0ff" stroke-width="2" fill="none"/>
+      <text x="16" y="28" class="lbl">CONTRIBUIÇÕES · 12 MESES</text>
+      <text x="16" y="80" class="num" fill="#00f0ff" filter="url(#glow)">928</text>
+      <text x="16" y="103" class="sub">913 em repositórios privados</text>
+    </g>
+    <g transform="translate(320,70)">
+      <rect width="270" height="118" rx="2" fill="#071019" stroke="#0e3a44"/>
+      <path d="M0 14 V0 H14 M256 0 H270 V14" stroke="#ff7a1a" stroke-width="2" fill="none"/>
+      <text x="16" y="28" class="lbl">SEQUÊNCIA ATUAL</text>
+      <text x="16" y="80" class="num" fill="#ff7a1a" filter="url(#glow)">0</text>
+      <text x="16" y="103" class="sub">dias seguidos</text>
+    </g>
+    <g transform="translate(610,70)">
+      <rect width="270" height="118" rx="2" fill="#071019" stroke="#0e3a44"/>
+      <path d="M0 14 V0 H14 M256 0 H270 V14" stroke="#00f0ff" stroke-width="2" fill="none"/>
+      <text x="16" y="28" class="lbl">MAIOR SEQUÊNCIA</text>
+      <text x="16" y="80" class="num" fill="#00f0ff" filter="url(#glow)">14</text>
+      <text x="16" y="103" class="sub">20/09/26 → 03/10/26</text>
+    </g>
+    <g transform="translate(900,70)">
+      <rect width="270" height="118" rx="2" fill="#071019" stroke="#0e3a44"/>
+      <path d="M0 14 V0 H14 M256 0 H270 V14" stroke="#00f0ff" stroke-width="2" fill="none"/>
+      <text x="16" y="28" class="lbl">TOTAL DESDE 2022</text>
+      <text x="16" y="80" class="num" fill="#00f0ff" filter="url(#glow)">935</text>
+      <text x="16" y="103" class="sub">contribuições na Grade</text>
+    </g>
+
+  <text x="30" y="212" class="hud">RASTRO SEMANAL · 52 SEMANAS</text>
+  <text x="1170" y="212" class="det" text-anchor="end">commits públicos 13  ·  PRs 0  ·  issues 0  ·  reviews 0  ·  pico 39 em 03/12/25</text>
+  <line x1="30" y1="292" x2="1170" y2="292" stroke="#0e3a44"/>
+  <path d="M30,292 L30.0,292.0 L52.4,292.0 L74.7,267.8 L97.1,292.0 L119.4,286.1 L141.8,262.9 L164.1,259.7 L186.5,290.9 L208.8,292.0 L231.2,292.0 L253.5,289.8 L275.9,266.2 L298.2,289.3 L320.6,291.5 L342.9,292.0 L365.3,292.0 L387.6,292.0 L410.0,292.0 L432.4,292.0 L454.7,292.0 L477.1,292.0 L499.4,292.0 L521.8,292.0 L544.1,291.5 L566.5,292.0 L588.8,292.0 L611.2,292.0 L633.5,292.0 L655.9,292.0 L678.2,292.0 L700.6,292.0 L722.9,292.0 L745.3,292.0 L767.6,292.0 L790.0,292.0 L812.4,292.0 L834.7,265.6 L857.1,262.9 L879.4,266.2 L901.8,251.1 L924.1,275.8 L946.5,283.4 L968.8,278.0 L991.2,283.4 L1013.5,287.7 L1035.9,262.4 L1058.2,278.0 L1080.6,222.0 L1102.9,261.3 L1125.3,273.2 L1147.6,271.5 L1170.0,274.2 L1170,292 Z" fill="url(#area)"/>
+  <polyline class="trail" pathLength="1000" points="30.0,292.0 52.4,292.0 74.7,267.8 97.1,292.0 119.4,286.1 141.8,262.9 164.1,259.7 186.5,290.9 208.8,292.0 231.2,292.0 253.5,289.8 275.9,266.2 298.2,289.3 320.6,291.5 342.9,292.0 365.3,292.0 387.6,292.0 410.0,292.0 432.4,292.0 454.7,292.0 477.1,292.0 499.4,292.0 521.8,292.0 544.1,291.5 566.5,292.0 588.8,292.0 611.2,292.0 633.5,292.0 655.9,292.0 678.2,292.0 700.6,292.0 722.9,292.0 745.3,292.0 767.6,292.0 790.0,292.0 812.4,292.0 834.7,265.6 857.1,262.9 879.4,266.2 901.8,251.1 924.1,275.8 946.5,283.4 968.8,278.0 991.2,283.4 1013.5,287.7 1035.9,262.4 1058.2,278.0 1080.6,222.0 1102.9,261.3 1125.3,273.2 1147.6,271.5 1170.0,274.2" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linejoin="round" filter="url(#glow)"/>
+  <circle cx="1080.6" cy="222.0" r="4" fill="#ff7a1a" filter="url(#glow)"/>
+</svg>
